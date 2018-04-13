@@ -1,0 +1,66 @@
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: absolute;
+    max-width: 100000px;
+    margin: 0 auto;
+}
+.timeline{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+/*button for the timeline*/
+.knapp{
+    border: solid 4px #ff00ff;
+    background-color: #ff05ff;
+    width: 5px;
+    Top: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 1;
+}
+/*the timeline box*/
+.container-timeline-card{
+    display:flex;
+    height:5em;
+    width:7em;
+    justify-content: center;
+    align-items: center;
+}
+/*empty box*/
+.container-timeline-filling{
+    border: solid 3px black;
+    background-color: white;
+}
+/*hide the empty box and keep the button in middle order 1 or 3*/
+.container-timeline-blank{
+    border: solid 3px green;
+}
+.body{
+    background-color: green;
+}
+
+/*order class, decide which order the container goes in the div (need to be modified)*/
+
+.order1{
+    display:flex;
+    order:1;
+}
+
+.order2{
+    display:flex;
+    order:2;
+}
+
+.order3{
+    display:flex;
+    order:3;
+}
